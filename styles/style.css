@@ -48,6 +48,7 @@
   text-underline-offset: 5px;
   align-items: center;
   justify-items: center;
+  margin-right: 15px;
 }
 
 .text-address {
@@ -251,19 +252,23 @@
 .about {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
   width: 1052px;
-  margin: 120px 24px 180px 24px;
+  margin: 120px 24px 24px;
 }
 
 .about__logo {
   justify-self: center;
-  margin-top: 35px;
-  margin-bottom: 25px;
+  align-self: flex-start;
   display: flex;
   width: 240px;
   background-color: black;
   border-radius: 50%;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  margin-top: 35px;
+  padding-top: 60px;
+  padding-bottom: 65px;
 }
 
 .logo {
@@ -274,13 +279,13 @@
 }
 
 .about__title {
-  align-self: center;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
   padding-left: 25px;
-  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-top: 135px;
 }
 
 .about__text {
@@ -289,14 +294,13 @@
   width: 693px;
   gap: 25px;
   margin-right: 24px;
-  justify-content: space-between;
   grid-column-start: 2;
   grid-column-end: 3;
   font-family: Raleway, sans-serif;
   font-size: 20px;
   font-weight: 400;
-  padding-left: 20px;
-  margin-top: -15px;
+  padding-left: 22px;
+  padding-top: 85px;
 }
 
 .footer {
@@ -304,12 +308,14 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   width: 1100px;
+  margin-top: 180px;
 }
 
 .footer__menu {
   justify-self: center;
   display: flex;
   width: 164px;
+  margin-left: 12px;
 }
 
 .footer__menu-list {
